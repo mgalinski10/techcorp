@@ -8,14 +8,16 @@ public class Employee {
     private String firstName;
     private String lastName;
     private String email;
+    private String company;
     private JobPosition position;
 
 
-    public Employee(String firstName, String lastName, String email, JobPosition position) {
+    public Employee(String firstName, String lastName, String email, String company, JobPosition position) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.position = position;
+        this.company = company;
     }
 
     @Override
@@ -35,12 +37,17 @@ public class Employee {
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
+                ", company='" + company + '\'' +
                 ", position=" + position +
                 '}';
     }
 
     public String getFullName() {
         return firstName + " " + lastName;
+    }
+
+    public String getLastName() {
+        return lastName;
     }
 
     public String getEmail() {
@@ -59,5 +66,8 @@ public class Employee {
         return position.getLevel();
     }
 
+    public String getCompany() {
+        return company;
+    }
 }
 

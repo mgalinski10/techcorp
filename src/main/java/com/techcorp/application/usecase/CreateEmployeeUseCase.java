@@ -21,7 +21,7 @@ public class CreateEmployeeUseCase {
                     );
                 });
 
-        Employee newEmployee = new Employee(employeeDTO.firstName(), employeeDTO.lastName(), employeeDTO.email(), employeeDTO.position());
+        Employee newEmployee = new Employee(employeeDTO.firstName(), employeeDTO.lastName(), employeeDTO.email(), employeeDTO.company(), employeeDTO.position());
 
         employeeRepository.save(newEmployee);
     }
