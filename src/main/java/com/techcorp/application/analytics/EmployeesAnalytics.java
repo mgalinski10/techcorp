@@ -1,11 +1,12 @@
 package com.techcorp.application.analytics;
 
-import com.techcorp.domain.entity.Employee;
-
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+
+import com.techcorp.domain.entity.Employee;
+
 
 public class EmployeesAnalytics {
     private final List<Employee> employees;

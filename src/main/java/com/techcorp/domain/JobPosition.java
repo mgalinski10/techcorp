@@ -1,5 +1,6 @@
 package com.techcorp.domain;
 
+
 public enum JobPosition {
     CEO("Chief Executive Officer", 25000, 1),
     VP("Vice President", 18000, 2),

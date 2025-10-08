@@ -1,10 +1,11 @@
 package com.techcorp.application.analytics;
 
-import com.techcorp.domain.entity.Employee;
-
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
+
+import com.techcorp.domain.entity.Employee;
+
 
 public class FinancialAnalytics {
     private final List<Employee> employees;

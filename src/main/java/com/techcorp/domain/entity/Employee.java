@@ -1,8 +1,9 @@
 package com.techcorp.domain.entity;
 
+import java.util.Objects;
+
 import com.techcorp.domain.JobPosition;
 
-import java.util.Objects;
 
 public class Employee {
     private String firstName;

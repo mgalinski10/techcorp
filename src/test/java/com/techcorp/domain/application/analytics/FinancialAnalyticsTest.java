@@ -1,15 +1,17 @@
 package com.techcorp.domain.application.analytics;
 
-import com.techcorp.application.analytics.FinancialAnalytics;
-import com.techcorp.domain.JobPosition;
+import java.util.List;
+import java.util.Optional;
+
 import com.techcorp.domain.entity.Employee;
+import com.techcorp.domain.JobPosition;
+import com.techcorp.application.analytics.FinancialAnalytics;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import java.util.List;
-import java.util.Optional;
 
 public class FinancialAnalyticsTest {
     private FinancialAnalytics financialAnalytics;
@@ -33,7 +35,7 @@ public class FinancialAnalyticsTest {
     @Test
     void shouldReturnHighestPaidEmployee() {
         Optional<Employee> result = financialAnalytics.findHighestPaidEmployee();
-        
+
         assertEquals("jan.kowalski@gmail.com", result.get().getEmail());
     }
 }

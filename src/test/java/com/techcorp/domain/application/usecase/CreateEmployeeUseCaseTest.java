@@ -1,25 +1,24 @@
 package com.techcorp.domain.application.usecase;
 
-import com.techcorp.application.dto.EmployeeDTO;
-import com.techcorp.application.usecase.CreateEmployeeUseCase;
+import java.util.Optional;
+
 import com.techcorp.domain.JobPosition;
 import com.techcorp.domain.entity.Employee;
 import com.techcorp.domain.exception.EmployeeWithThatEmailExistsException;
 import com.techcorp.domain.repository.EmployeeRepository;
+import com.techcorp.application.dto.EmployeeDTO;
+import com.techcorp.application.usecase.CreateEmployeeUseCase;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentCaptor;
-import org.mockito.junit.jupiter.MockitoExtension;
-
-import java.util.Optional;
 
 import static org.mockito.Mockito.*;
 
-@ExtendWith(MockitoExtension.class)
+
 public class CreateEmployeeUseCaseTest {
     EmployeeRepository employeeRepository;
     CreateEmployeeUseCase createEmployeeUseCase;

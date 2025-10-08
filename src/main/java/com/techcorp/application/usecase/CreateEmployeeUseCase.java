@@ -1,10 +1,10 @@
 package com.techcorp.application.usecase;
 
-import com.techcorp.application.dto.EmployeeDTO;
-
 import com.techcorp.domain.entity.Employee;
 import com.techcorp.domain.exception.EmployeeWithThatEmailExistsException;
 import com.techcorp.domain.repository.EmployeeRepository;
+import com.techcorp.application.dto.EmployeeDTO;
+
 
 public class CreateEmployeeUseCase {
     private final EmployeeRepository employeeRepository;
