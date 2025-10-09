@@ -1,4 +1,4 @@
-package com.techcorp.domain.application.usecase;
+package com.techcorp.application.usecase;
 
 import java.util.Optional;
 

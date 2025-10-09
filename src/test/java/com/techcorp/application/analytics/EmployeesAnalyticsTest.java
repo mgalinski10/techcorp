@@ -1,4 +1,4 @@
-package com.techcorp.domain.application.analytics;
+package com.techcorp.application.analytics;
 
 import java.util.List;
 import java.util.Map;
