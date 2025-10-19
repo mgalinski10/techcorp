@@ -1,4 +1,4 @@
-package com.techcorp.domain;
+package com.techcorp.domain.entity;
 
 
 public enum JobPosition {

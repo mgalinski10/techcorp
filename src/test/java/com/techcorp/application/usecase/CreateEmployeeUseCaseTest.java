@@ -2,12 +2,11 @@ package com.techcorp.application.usecase;
 
 import java.util.Optional;
 
-import com.techcorp.domain.JobPosition;
+import com.techcorp.domain.entity.JobPosition;
 import com.techcorp.domain.entity.Employee;
 import com.techcorp.domain.exception.EmployeeWithThatEmailExistsException;
 import com.techcorp.domain.repository.EmployeeRepository;
 import com.techcorp.application.dto.EmployeeDTO;
-import com.techcorp.application.usecase.CreateEmployeeUseCase;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
