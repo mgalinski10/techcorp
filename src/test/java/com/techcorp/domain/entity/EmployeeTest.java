@@ -1,7 +1,5 @@
 package com.techcorp.domain.entity;
 
-import com.techcorp.domain.JobPosition;
-
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

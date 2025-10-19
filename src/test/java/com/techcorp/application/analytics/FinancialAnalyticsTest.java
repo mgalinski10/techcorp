@@ -4,8 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import com.techcorp.domain.entity.Employee;
-import com.techcorp.domain.JobPosition;
-import com.techcorp.application.analytics.FinancialAnalytics;
+import com.techcorp.domain.entity.JobPosition;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

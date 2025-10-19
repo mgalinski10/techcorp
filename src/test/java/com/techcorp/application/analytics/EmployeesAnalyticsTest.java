@@ -5,8 +5,7 @@ import java.util.Map;
 import java.util.Set;
 
 import com.techcorp.domain.entity.Employee;
-import com.techcorp.domain.JobPosition;
-import com.techcorp.application.analytics.EmployeesAnalytics;
+import com.techcorp.domain.entity.JobPosition;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
