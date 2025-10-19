@@ -11,6 +11,10 @@ public class CsvEmployeeValidator implements CsvValidator {
     public List<String> validate(List<String> token, int line) {
         List<String> availablePositions = Arrays.stream(JobPosition.values()).map(JobPosition::name).toList();
 
+        if (token.size() == 1) {
+            return null;
+        }
+
         String position = token.get(4);
         int salary = Integer.parseInt(token.get(5));
 

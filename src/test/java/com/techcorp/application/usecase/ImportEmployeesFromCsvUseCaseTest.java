@@ -34,6 +34,8 @@ public class ImportEmployeesFromCsvUseCaseTest {
         String FILE_PATH = "/home/michal/IdeaProjects/techcorp/src/test/java/com/techcorp/infrastructure/csv/employees.csv";
         this.importEmployeesFromCsvUseCase = new ImportEmployeesFromCsvUseCase(reader, tokenizer, validator, mapper);
 
-        importEmployeesFromCsvUseCase.execute(FILE_PATH);
+        ImportSummary result = importEmployeesFromCsvUseCase.execute(FILE_PATH);
+
+        System.out.println(result);
     }
 }

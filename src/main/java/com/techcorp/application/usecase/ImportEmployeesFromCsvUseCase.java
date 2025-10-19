@@ -31,7 +31,6 @@ public class ImportEmployeesFromCsvUseCase {
         try (Stream<String> lines = reader.readLines(path)) {
             List<List<String>> linesAfterValidation = lines
                     .skip(1)
-                    .filter(l -> !l.isBlank())
                     .map(line -> {
                         int currentLine = lineNumber.getAndIncrement();
                         List<String> tokens = tokenizer.tokenize(line);
@@ -40,10 +39,7 @@ public class ImportEmployeesFromCsvUseCase {
                     })
                     .toList();
 
-            ImportSummary summary = mapper.map(linesAfterValidation);
-
-            System.out.println(summary);
-            return summary;
+            return mapper.map(linesAfterValidation);
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }

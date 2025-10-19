@@ -19,7 +19,9 @@ public class CsvEmployeeMapper implements CsvMapper<ImportSummary> {
         List<List<String>> errors = new ArrayList<>();
 
         tokensAfterValidation.forEach(t -> {
-            if (t.size() <= MAX_ERROR_TOKEN_LENGTH) {
+            if (t == null) {
+                return;
+            } else if (t.size() <= MAX_ERROR_TOKEN_LENGTH) {
                 errors.add(t);
             } else {
                 JobPosition position = JobPosition.valueOf(t.get(4));
